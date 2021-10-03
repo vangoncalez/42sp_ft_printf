@@ -6,7 +6,7 @@
 /*   By: vaferrei <vaferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/25 13:56:14 by vaferrei          #+#    #+#             */
-/*   Updated: 2021/10/03 12:13:10 by vaferrei         ###   ########.fr       */
+/*   Updated: 2021/10/03 13:49:02 by vaferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,6 +78,6 @@ void	ft_putitohex(unsigned int num, int typec)
 			else
 				c = 55 + num;
 		}
-		write(1, &c, 1);
+		ft_putchar_fd(c, 1);
 	}
 }

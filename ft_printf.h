@@ -6,14 +6,13 @@
 /*   By: vaferrei <vaferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/25 13:50:58 by vaferrei          #+#    #+#             */
-/*   Updated: 2021/10/03 12:18:43 by vaferrei         ###   ########.fr       */
+/*   Updated: 2021/10/03 13:53:23 by vaferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include <stdio.h>
 # include <stdarg.h>
 # include "libft/libft.h"
 

@@ -6,7 +6,7 @@
 /*   By: vaferrei <vaferrei@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/29 22:12:59 by vaferrei          #+#    #+#             */
-/*   Updated: 2021/10/03 12:13:48 by vaferrei         ###   ########.fr       */
+/*   Updated: 2021/10/03 13:42:26 by vaferrei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,8 @@ t_flags	ft_pf_str_m(char *str, t_flags flags)
 	if (flags.f_minus_n > ft_strlen(str))
 		i = put_flag(flags.f_minus_n - ft_strlen(str), ' ');
 	flags.tlen = flags.tlen + i;
+	if (flags.tlen == 0 && flags.f_minus_n == 0)
+		flags.error = -1;
 	return (flags);
 }
 
@@ -55,6 +57,8 @@ t_flags	ft_pf_str_d(char *str, t_flags flags)
 		i++;
 	}
 	flags.tlen = i;
+	if (flags.tlen == 0)
+		flags.error = -1;
 	return (flags);
 }
 
