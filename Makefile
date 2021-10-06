@@ -6,7 +6,7 @@
 #    By: vaferrei <vaferrei@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/24 20:47:53 by vaferrei          #+#    #+#              #
-#    Updated: 2021/10/02 17:21:32 by vaferrei         ###   ########.fr        #
+#    Updated: 2021/10/06 08:48:26 by vaferrei         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,8 +56,7 @@ fclean: clean
 
 re: fclean all
 
-bonus: re
-
+bonus: all
 
 test: all
 	${CC} main.c libftprintf.a libft/libft.a -o teste
